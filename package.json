@@ -1,0 +1,31 @@
+{
+  "name": "seed-installation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.html",
+  "scripts": {
+    "build": "node ./node_modules/gulp/bin/gulp.js",
+    "watch": "node ./node_modules/gulp/bin/gulp.js watch",
+    "watch-nw": "npm run build && nw --dev",
+    "start": "npm run build && nw"
+  },
+  "dependencies": {
+    "animejs": "^2.0.2",
+    "hammerjs": "^2.0.8",
+    "jquery": "^3.2.1",
+    "jquery-hammerjs": "^2.0.0",
+    "nw": "^0.24.0-sdk"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0"
+  },
+  "author": "Grama",
+  "repository": "https://github.com/grama-cc/seed-installation",
+  "license": "UNLICENSED",
+  "private": true
+}

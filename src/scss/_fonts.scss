@@ -1,0 +1,15 @@
+$fonts: '../../assets/fonts/';
+
+@font-face {
+  font-family: MarkPro;
+  src: url($fonts + 'MarkPro-Bold.otf') format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: MarkPro;
+  src: url($fonts + 'MarkPro-Thin.otf') format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}

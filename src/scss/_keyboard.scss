@@ -1,0 +1,47 @@
+#keyboard {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  background-color: #eceff1;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  max-width: 1000px;
+  z-index: 9999;
+  transform: translate(-50%, calc(100% + 30px));
+  transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  
+  &.show {
+    transform: translate(-50%, 0);
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+
+    button {
+      outline: none;
+      border: none;
+      background: #fcfcfc;
+      color: #37474f;
+      margin: 1px;
+      width: 45px;
+      height: 40px;
+      border-radius: 3px;
+      font-size: 14px;
+
+      &:hover {
+        color: #fcfcfc;
+        background: #37474f;
+      }
+    }
+
+    .delete {
+      width: 60px;
+    }
+
+    .space {
+      width: 280px;
+    }
+  }
+}
