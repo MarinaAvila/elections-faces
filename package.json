@@ -1,31 +1,36 @@
 {
-  "name": "seed-installation",
-  "version": "1.0.0",
+  "name": "seed-html",
+  "version": "2.0.0",
   "description": "",
-  "main": "build/index.html",
+  "author": "Grama",
+  "repository": "https://github.com/grama-cc/seed-html",
+  "license": "UNLICENSED",
+  "private": true,
   "scripts": {
-    "build": "node ./node_modules/gulp/bin/gulp.js",
-    "watch": "node ./node_modules/gulp/bin/gulp.js watch",
-    "watch-nw": "npm run build && nw --dev",
-    "start": "npm run build && nw"
+    "dev": "webpack-dev-server",
+    "build": "NODE_ENV=production webpack"
   },
   "dependencies": {
-    "animejs": "^2.0.2",
-    "hammerjs": "^2.0.8",
-    "jquery": "^3.2.1",
-    "jquery-hammerjs": "^2.0.0",
-    "nw": "^0.24.0-sdk"
+    "animejs": "^2.2.0",
+    "babel-polyfill": "^6.26.0",
+    "jquery": "^3.3.1"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-file-include": "^1.1.0",
-    "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.0"
-  },
-  "author": "Grama",
-  "repository": "https://github.com/grama-cc/seed-installation",
-  "license": "UNLICENSED",
-  "private": true
+    "autoprefixer": "^8.2.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-hot-loader": "^1.3.9",
+    "css-loader": "^0.28.11",
+    "mini-css-extract-plugin": "^0.4.0",
+    "node-sass": "^4.8.3",
+    "postcss-loader": "^2.1.3",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "webpack": "^4.4.1",
+    "webpack-cli": "^2.0.13",
+    "webpack-dev-server": "^3.1.1",
+    "webpack-merge": "^4.1.2"
+  }
 }
