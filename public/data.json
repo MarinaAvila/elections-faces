@@ -1,4 +1,37 @@
 {
-    "batata": "frita",
-    "aipim": "cozido"
+    "economics": {
+        "question": "question1",
+        "answers": [
+            {
+                "yes": [
+                    {
+                        "hadad": 1,
+                        "ciro": 0,
+                        "marina": 0,
+                        "batata": 0
+                    }
+                ]
+            },
+            {
+                "no": [
+                    {
+                        "hadad": 0,
+                        "ciro": 1,
+                        "marina": 0,
+                        "batata": 0
+                    }
+                ]
+            },
+            {
+                "depend": [
+                    {
+                        "hadad": 0,
+                        "ciro": 0,
+                        "marina": 1,
+                        "batata": 0
+                    }
+                ]
+            }
+        ]
+    }
 }
